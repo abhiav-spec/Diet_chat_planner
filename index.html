@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlan - Professional Diet Chat Planner</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <h1>NutriPlan</h1>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-tab="planner">Meal Planner</button>
+                <button class="nav-btn" data-tab="chat">Diet Assistant</button>
+                <button class="nav-btn" data-tab="profile">Profile</button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Meal Planner Tab -->
+            <div id="planner" class="tab-content active">
+                <div class="planner-header">
+                    <h2>Weekly Meal Planner</h2>
+                    <button class="btn-primary" id="generatePlan">
+                        <i class="fas fa-magic"></i> Generate Plan
+                    </button>
+                </div>
+
+                <div class="meal-grid">
+                    <div class="day-column" data-day="monday">
+                        <h3>Monday</h3>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <h4><i class="fas fa-sun"></i> Breakfast</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <h4><i class="fas fa-utensils"></i> Lunch</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <h4><i class="fas fa-moon"></i> Dinner</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                    </div>
+
+                    <div class="day-column" data-day="tuesday">
+                        <h3>Tuesday</h3>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <h4><i class="fas fa-sun"></i> Breakfast</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <h4><i class="fas fa-utensils"></i> Lunch</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <h4><i class="fas fa-moon"></i> Dinner</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                    </div>
+
+                    <div class="day-column" data-day="wednesday">
+                        <h3>Wednesday</h3>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <h4><i class="fas fa-sun"></i> Breakfast</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <h4><i class="fas fa-utensils"></i> Lunch</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <h4><i class="fas fa-moon"></i> Dinner</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                    </div>
+
+                    <div class="day-column" data-day="thursday">
+                        <h3>Thursday</h3>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <h4><i class="fas fa-sun"></i> Breakfast</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <h4><i class="fas fa-utensils"></i> Lunch</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <h4><i class="fas fa-moon"></i> Dinner</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                    </div>
+
+                    <div class="day-column" data-day="friday">
+                        <h3>Friday</h3>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <h4><i class="fas fa-sun"></i> Breakfast</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <h4><i class="fas fa-utensils"></i> Lunch</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <h4><i class="fas fa-moon"></i> Dinner</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                    </div>
+
+                    <div class="day-column" data-day="saturday">
+                        <h3>Saturday</h3>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <h4><i class="fas fa-sun"></i> Breakfast</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <h4><i class="fas fa-utensils"></i> Lunch</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <h4><i class="fas fa-moon"></i> Dinner</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                    </div>
+
+                    <div class="day-column" data-day="sunday">
+                        <h3>Sunday</h3>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <h4><i class="fas fa-sun"></i> Breakfast</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <h4><i class="fas fa-utensils"></i> Lunch</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <h4><i class="fas fa-moon"></i> Dinner</h4>
+                            <div class="meal-content">Click to add meal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diet Assistant Chat Tab -->
+            <div id="chat" class="tab-content">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <h2><i class="fas fa-robot"></i> Diet Assistant</h2>
+                        <p>Ask me anything about nutrition, meal planning, or dietary advice!</p>
+                    </div>
+
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>Hello! I'm your personal diet assistant. How can I help you with your nutrition goals today?</p>
+                                <span class="message-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-container">
+                        <input type="text" id="chatInput" placeholder="Ask about nutrition, recipes, or diet plans..." />
+                        <button id="sendMessage" class="btn-send">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+
+                    <div class="quick-questions">
+                        <h4>Quick Questions:</h4>
+                        <button class="quick-btn" data-question="What foods are high in protein?">High Protein Foods</button>
+                        <button class="quick-btn" data-question="How can I lose weight healthily?">Healthy Weight Loss</button>
+                        <button class="quick-btn" data-question="What's a good breakfast for energy?">Energy Breakfast</button>
+                        <button class="quick-btn" data-question="Low carb meal ideas?">Low Carb Meals</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Tab -->
+            <div id="profile" class="tab-content">
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <h2><i class="fas fa-user"></i> Your Profile</h2>
+                        <p>Set your dietary preferences and goals</p>
+                    </div>
+
+                    <div class="profile-form">
+                        <div class="form-group">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" id="height" placeholder="170">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="weight">Weight (kg)</label>
+                            <input type="number" id="weight" placeholder="70">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" placeholder="30">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="activity">Activity Level</label>
+                            <select id="activity">
+                                <option value="sedentary">Sedentary</option>
+                                <option value="light">Lightly Active</option>
+                                <option value="moderate">Moderately Active</option>
+                                <option value="very">Very Active</option>
+                                <option value="extra">Extra Active</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goal">Goal</label>
+                            <select id="goal">
+                                <option value="maintain">Maintain Weight</option>
+                                <option value="lose">Lose Weight</option>
+                                <option value="gain">Gain Weight</option>
+                                <option value="muscle">Build Muscle</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Dietary Restrictions</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="vegetarian"> Vegetarian
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="vegan"> Vegan
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="glutenfree"> Gluten-Free
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="keto"> Keto
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="paleo"> Paleo
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary" id="saveProfile">
+                            <i class="fas fa-save"></i> Save Profile
+                        </button>
+
+                        <div class="calorie-info" id="calorieInfo">
+                            <h3>Daily Calorie Needs</h3>
+                            <div class="calorie-display">
+                                <span id="dailyCalories">Calculate your needs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Meal Modal -->
+    <div id="mealModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Add Meal</h3>
+            <div class="meal-form">
+                <input type="text" id="mealName" placeholder="Meal name (e.g., Grilled Chicken Salad)">
+                <textarea id="mealDescription" placeholder="Description or ingredients..."></textarea>
+                <input type="number" id="mealCalories" placeholder="Calories">
+                <button class="btn-primary" id="saveMeal">Save Meal</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
